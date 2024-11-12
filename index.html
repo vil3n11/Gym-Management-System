@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gym Management System</h1>
+        <form id="memberForm">
+            <h2>Add Member</h2>
+            <input type="text" id="memberName" placeholder="Member Name" required>
+            <input type="number" id="memberAge" placeholder="Age" required>
+            <input type="email" id="memberEmail" placeholder="Member Email" required>
+            <input type="tel" id="memberPhone" placeholder="Member Phone" required>
+            <input type="text" id="memberAddress" placeholder="Address" required>
+            <input type="date" id="joiningDate" placeholder="Joining Date" required>
+            <label for="feesStatus">Fees Submitted?</label>
+            <select id="feesStatus" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+            <button type="submit">Add Member</button>
+        </form>
+        
+        <h2>Members List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Address</th>
+                    <th>Joining Date</th>
+                    <th>Fees Submitted</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="memberList"></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
